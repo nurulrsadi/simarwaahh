@@ -5,7 +5,7 @@ ganti folder dengan nama simarwahh
 
 jika tidak dapat convert pdf, install html2pdf menggunakan composer
 ## ormawa : 
-username : himatif@uinsgd
+username : himatif@uinsgd.ac.id
 password : himatif
 ## admin : 
 username admin
