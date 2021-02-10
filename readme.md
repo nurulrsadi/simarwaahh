@@ -1,6 +1,5 @@
 # test login
-Database yang digunakan : 
-
+Database yang digunakan : simarwah_db.sql
 
 ganti folder dengan nama simarwahh
 
