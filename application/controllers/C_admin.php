@@ -1720,11 +1720,11 @@ public function edit_data_himpunan(){
           }
         }
       $this->M_dana->edit_datauserukmukk($kode_ukmukk,$nama_ukmukk);
-      // $this->Model_View->edit_useraja($kode_himpunan,$username);
+       $this->Model_View->edit_useraja($kode_ukmukk,$username);
       $this->Model_View->update_ukmukk($kode_ukmukk,$nama_ukmukk,$desc_ukmukk,$visi_ukmukk,$misi_ukmukk,$newimage);
       }else{
         $this->M_dana->edit_datauserukmukk($kode_ukmukk,$nama_ukmukk);
-      // $this->Model_View->edit_useraja($kode_himpunan,$username);
+       $this->Model_View->edit_useraja($kode_ukmukk,$username);
       $this->Model_View->update_ukmukk($kode_ukmukk,$nama_ukmukk,$desc_ukmukk,$visi_ukmukk,$misi_ukmukk,$imageold);
       }
       

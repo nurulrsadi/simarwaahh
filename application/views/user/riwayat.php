@@ -1,3 +1,10 @@
+<!-- <link rel="stylesheet"type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>  -->
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css"/> -->
+<!-- <script type="text/javascript" src="https://cdn.datatables.net/v/ju/dt-1.10.23/r-2.2.7/datatables.min.js"></script> -->
+<link href="<?php echo base_url('assets/css/dataTables.bootstrap4.min.css') ?>" rel="stylesheet">
 </header>
 
 <!-- modal for information at header -->
@@ -9,7 +16,9 @@
 	</header>
   <?php if( $this->session->userdata('role') ==0):?>
     <!-- <div class="features"> -->
-    <table class="content-table">
+    <div class="card-body">
+			<div class="table-responsive">
+    <table class="content-table table " id="dataTable" width="100%" cellspacing="0">
       <thead>
         <tr>
           <th class="text-center">Tanggal</th>
@@ -48,6 +57,8 @@
         <?php endforeach;?>
       </tbody>
     </table>
+      </div>
+      </div>
     <?php
       foreach($fklts->result_array() as $i):
         $kd_jrsn=$i['kd_jrsn'];
@@ -78,12 +89,16 @@
             <h4 class="modal-title" id="exampleModalLabel">Detail Pengajuan</h4>
           </div>
           <div class="modal-body">
-                <div class="form-group">
+          <div class="form-group">
+			    <label>Tahun akademik</t></label>
+				<input type="text" name="tahunakademik" class="form-control" value="<?php echo $tahunakademik;?>" required readonly>
+				</div>
+          <div class="form-group">
 			    <label>Tanggal</t></label>
 				<input type="text" name="tanggal" class="form-control" value="<?php echo date_indo($tgl_pengajuan);?>" required readonly>
 				</div>
 				<div class="form-group">
-					<label>Nama penyewa</t></label>
+					<label>Nama organisasi</t></label>
 					<input type="text" name="penyewa" class="form-control" value="<?php echo $kd_jrsn;?>" required readonly>
 				</div>
 				<div class="form-group">
@@ -170,7 +185,7 @@
     <!-- </div> -->
   <?php endforeach; ?>
   <?php elseif( $this->session->userdata('role') ==2 ):?>  
-    <table class="content-table">
+    <table class="content-table" id="example">
       <thead>
         <tr>
           <th class="text-center">Tanggal</th>
@@ -241,12 +256,16 @@
             <h4 class="modal-title" id="exampleModalLabel">Detail Pengajuan</h4>
           </div>
           <div class="modal-body">
+          <div class="form-group">
+			    <label>Tahun akademik</t></label>
+				<input type="text" name="tahunakademik" class="form-control" value="<?php echo $tahunakademik;?>" required readonly>
+				</div>          
             <div class="form-group">
 			<label>Tanggal</t></label>
 			<input type="text" name="tanggal" class="form-control" value="<?php echo date_indo($tgl_pengajuan);?>" required readonly>
 			</div>
 			<div class="form-group">
-				<label>Nama penyewa</t></label>
+				<label>Nama organisasi</t></label>
 				<input type="text" name="penyewa" class="form-control" value="<?php echo $kd_ukmkk;?>" required readonly>
 			</div>
 			<div class="form-group">
@@ -338,3 +357,23 @@
 </section>
 </div>
 </div>
+
+<script>
+$(document).ready( function () {
+    $('#example').DataTable();
+} );
+</script>
+<!-- <script type="text/javascript" src="jquery.dataTables.js"></script>
+<script type="text/javascript" src="dataTables.scrollingPagination.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#example').dataTable( {
+            "pagingType": "scrolling"
+        } );
+    } );
+</script>  -->
+<script src="<?php echo base_url('assets/js/jquery.dataTables.min.js') ?>"></script>
+<script src="<?php echo base_url('assets/js/dataTables.bootstrap4.min.js') ?>"></script>
+<script src="<?php echo base_url('assets/js/datatables-demo.js') ?>"></script>
+<!-- <script src="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css"></script> -->
+

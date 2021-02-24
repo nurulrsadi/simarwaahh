@@ -67,8 +67,8 @@
 	</div>
 	<?php 
                   foreach($h_l_ukmukk->result_array()  as $i):
-					$kd_ukmkk=$i['kd_ukmkk'];
-					$nama_ukmukk=$i['nama_ukmukk'];
+										$kd_ukmkk=$i['kd_ukmkk'];
+										$nama_ukmukk=$i['nama_ukmukk'];
                     $tahunakademik=$i['tahunakademik'];
                     $danasisa=$i['danasisa'];
                     $danaawal=$i['danasisa'];
@@ -76,12 +76,12 @@
                     $nPengajuan=$i['nPengajuan'];
                     $color_button=$i['button_color_history'];
                     $nama_status=$i['Nama_Status'];
-					$tgl_pengajuan=$i['insertdata'];
-					$nPengajuan=$i['nPengajuan'];
-					$id_pengajuan_ukmukk=$i['id_pengajuan_ukmukk'];
-					$alasan_gagal_pengajuan=$i['alasan_gagal_pengajuan'];
-					$alasan_gagal_laporan=$i['alasan_gagal_laporan'];
-					$suratpengajuan=$i['suratpengajuan'];
+										$tgl_pengajuan=$i['insertdata'];
+										$nPengajuan=$i['nPengajuan'];
+										$id_pengajuan_ukmukk=$i['id_pengajuan_ukmukk'];
+										$alasan_gagal_pengajuan=$i['alasan_gagal_pengajuan'];
+										$alasan_gagal_laporan=$i['alasan_gagal_laporan'];
+										$suratpengajuan=$i['suratpengajuan'];
                     $rinciankegiatan=$i['rinciankegiatan'];
                     $rkakl=$i['rkakl'];
                     $tor=$i['tor'];
@@ -99,7 +99,11 @@
 											</button>
 										</div>
 										<div class="modal-body">
-								        	<div class="form-group">
+											<div class="form-group">
+												<label>Tahun akademik</t></label>
+												<input type="text" name="tahunakademik" class="form-control" value="<?php echo $tahunakademik;?>" required readonly>
+											</div>
+								    	<div class="form-group">
 												<label>Tanggal</t></label>
 												<input type="text" name="tanggal" class="form-control" value="<?php echo date_indo($tgl_pengajuan);?>" required readonly>
 											</div>

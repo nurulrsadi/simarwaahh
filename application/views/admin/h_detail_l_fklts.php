@@ -77,11 +77,11 @@
                     $nama_fakultas=$i['nama_fakultas'];
                     $color_button=$i['button_color_history'];
                     $nama_status=$i['Nama_Status'];
-					$tgl_pengajuan=$i['insertdata'];
-					$id_pengajuan=$i['id_pengajuan'];
-					$alasan_gagal_pengajuan=$i['alasan_gagal_pengajuan'];
-					$alasan_gagal_laporan=$i['alasan_gagal_laporan'];
-					$suratpengajuan=$i['suratpengajuan'];
+										$tgl_pengajuan=$i['insertdata'];
+										$id_pengajuan=$i['id_pengajuan'];
+										$alasan_gagal_pengajuan=$i['alasan_gagal_pengajuan'];
+										$alasan_gagal_laporan=$i['alasan_gagal_laporan'];
+										$suratpengajuan=$i['suratpengajuan'];
                     $rinciankegiatan=$i['rinciankegiatan'];
                     $rkakl=$i['rkakl'];
                     $tor=$i['tor'];
@@ -99,7 +99,11 @@
 											</button>
 										</div>
 										<div class="modal-body">
-								        	<div class="form-group">
+										<div class="form-group">
+												<label>Tahun akademik</t></label>
+												<input type="text" name="tahunakademik" class="form-control" value="<?php echo $tahunakademik;?>" required readonly>
+											</div>
+								      <div class="form-group">
 												<label>Tanggal</t></label>
 												<input type="text" name="tanggal" class="form-control" value="<?php echo date_indo($tgl_pengajuan);?>" required readonly>
 											</div>
@@ -185,7 +189,6 @@
 							</div>
 	<?php endforeach; ?>
 
-</div>
 </div>
 <script>
 	// javascript for open file

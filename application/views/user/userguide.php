@@ -1,18 +1,17 @@
 </header>
 <section id="awal">
-    <div class="row gtr-200">
-     <div class="col-4 col-12-medium">
-     
-     </div>
-     <div class="col-4 col-12-medium">
-     
-     </div>
-     <div class="col-4 col-12-medium">
-        <div class="content" align-content:"right;" justify-self:right;>
-        	        <a href="<?= site_url().'assets/default_file/User Guide SIMARWAH - Mahasiswa.pdf' ?>" target="_blank" class="button primary" style="background-color:#007bff;" > User Guide SIMARWAH - Mahasiswa</a>
-        </div>
-     </div>
-    </div>
+<div class="row gtr-200">
+			<div class="col-2 col-12-medium">
+			</div>
+			<div class="col-2 col-12-medium">
+			</div>
+			<div class="col-2 col-12-medium">
+			</div>
+			<div class="col-1 col-12-medium">
+			</div>
+			<div class="col-2 col-12-medium">
+			<a href="<?= site_url().'assets/default_file/User Guide SIMARWAH - Mahasiswa.pdf' ?>" target="_blank" class="button primary" style="background-color:#007bff;" > User Guide SIMARWAH - Mahasiswa</a>
+			</div>
 	<article>
 		<div class="content">
 			<header>

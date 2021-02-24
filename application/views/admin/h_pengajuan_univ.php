@@ -23,7 +23,6 @@
 						<tr>
 							<th>Id</th>
 							<th>Nama Ormawa</th>
-							<th>Tahun Akademik</th>
               <th>Banyak pernah melakukan pengajuan</th>
 							<th>Aksi</th>
 						</tr>
@@ -43,7 +42,6 @@
               
 							<td><?= $j++; ?></td>
                             <td><?= $kd_jrsn; ?></td>
-							<td><?= $tahunakademik; ?></td>
 							<td class="text-center">
                             <?= $nLakukanPengajuan; ?>
                           </td>
