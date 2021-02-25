@@ -123,7 +123,7 @@
 		<form method="post" action="<?php echo base_url('dana/tolak_laporan_univ/'.$kd_jrsn.'/'.$id_pengajuan)?>" enctype="multipart/form-data">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Terima Laporan</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Alasan laporan kegiatan ditolak</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>

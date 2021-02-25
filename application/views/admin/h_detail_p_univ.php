@@ -23,7 +23,6 @@
 						<tr>
 							<th>Id</th>
 							<th>Nama Ormawa</th>
-							<!-- <th>Tahun Akademik</th> -->
 							<th>Tanggal Proses Pengajuan</th>
 							<th>Pengajuan ke- </th>
               <th>Status</th>
@@ -47,8 +46,7 @@
 										$id_pengajuan=$i['id_pengajuan'];
                     ?>
 							<td><?= $j++; ?></td>
-              <td> <?= $kd_jrsn; ?> </td>
-							<!-- <td><?= $tahunakademik; ?></td> -->
+              <td><?= $kd_jrsn; ?></td>
 							<td><?= date_indo($tgl_pengajuan);?></td>
 							<td class="text-center"><?= $nPengajuan; ?></td>
 							<td class="text-center">
@@ -77,9 +75,9 @@
                     $nPengajuan=$i['nPengajuan'];
                     $color_button=$i['button_color_history'];
                     $nama_status=$i['Nama_Status'];
-										$tgl_pengajuan=$i['insertdata'];
-										$id_pengajuan=$i['id_pengajuan'];
-										$suratpengajuan=$i['suratpengajuan'];
+					$tgl_pengajuan=$i['insertdata'];
+					$id_pengajuan=$i['id_pengajuan'];
+					$suratpengajuan=$i['suratpengajuan'];
                     $rinciankegiatan=$i['rinciankegiatan'];
                     $rkakl=$i['rkakl'];
                     $tor=$i['tor'];
@@ -99,11 +97,7 @@
 											</button>
 										</div>
 										<div class="modal-body">
-										  <div class="form-group">
-												<label>Tahun akademik</t></label>
-												<input type="text" name="tahunakademik" class="form-control" value="<?php echo $tahunakademik;?>" required readonly>
-											</div>
-										  <div class="form-group">
+										    <div class="form-group">
 												<label>Tanggal</t></label>
 												<input type="text" name="tanggal" class="form-control" value="<?php echo date_indo($tgl_pengajuan);?>" required readonly>
 											</div>

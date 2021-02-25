@@ -675,7 +675,7 @@ class c_admin extends CI_Controller
       $this->session->set_flashdata('flashdana', 'Dana Ormawa berhasil diupdate');
       redirect('c_admin/Edit_Pagu_UKMUKK');
   }
-function reset_akun_universitas(){
+  function reset_akun_universitas(){
     $id_reset=$this->input->post('kd_jrsn');
     $id_detailuser=$this->input->post('id_dana');
     $statususer=1;
@@ -755,7 +755,6 @@ function reset_akun_universitas(){
         $fakultas[$i]=$data['univ']->result_array()[$i]['parent_fakultas'];
 
         $myJson['user']=$username[$i];
-        // $myJson['nama_fakultas']=$nama_fakultas[$i];
         $myJson['kode_himpunan']=$kode_himpunan[$i];
         $myJson['nama_himpunan']=$nama_himpunan[$i];
         $myJson['deskripsi']=$deskripsi[$i];
@@ -1720,11 +1719,11 @@ public function edit_data_himpunan(){
           }
         }
       $this->M_dana->edit_datauserukmukk($kode_ukmukk,$nama_ukmukk);
-       $this->Model_View->edit_useraja($kode_ukmukk,$username);
+      // $this->Model_View->edit_useraja($kode_himpunan,$username);
       $this->Model_View->update_ukmukk($kode_ukmukk,$nama_ukmukk,$desc_ukmukk,$visi_ukmukk,$misi_ukmukk,$newimage);
       }else{
         $this->M_dana->edit_datauserukmukk($kode_ukmukk,$nama_ukmukk);
-       $this->Model_View->edit_useraja($kode_ukmukk,$username);
+      // $this->Model_View->edit_useraja($kode_himpunan,$username);
       $this->Model_View->update_ukmukk($kode_ukmukk,$nama_ukmukk,$desc_ukmukk,$visi_ukmukk,$misi_ukmukk,$imageold);
       }
       

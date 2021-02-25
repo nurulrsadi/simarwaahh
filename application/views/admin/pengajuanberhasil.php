@@ -126,7 +126,7 @@
 						<label>Update Dana yang di ACC <small class="text-decoration" style="color:red">contoh : 2000000</small>
 							</t>
 						</label>
-						</t><input type="number" name="danaupdate" min="1" class="form-control" required>
+						</t><input type="number" name="danaupdate" min="1" value="" class="form-control" required>
 					</div>
 			</div>
 			<input type="hidden" id="id_pengajuan"name="id_pengajuan" value="<?= $id_pengajuan?>">

@@ -47,7 +47,6 @@
                     ?>
 							<td><?= $j++; ?></td>
               <td><?= $kd_ukmkk; ?></td>
-							<!-- <td><?= $tahunakademik; ?></td> -->
 							<td><?= date_indo($tgl_pengajuan);?></td>
 							<td class="text-center"><?= $nPengajuan; ?></td>
 							<td class="text-center">
@@ -98,11 +97,7 @@
 											</button>
 										</div>
 										<div class="modal-body">
-											<div class="form-group">
-												<label>Tahun akademik</t></label>
-												<input type="text" name="tahunakademik" class="form-control" value="<?php echo $tahunakademik;?>" required readonly>
-											</div>
-		                  <div class="form-group">
+		                                    <div class="form-group">
 												<label>Tanggal</t></label>
 												<input type="text" name="tanggal" class="form-control" value="<?php echo date_indo($tgl_pengajuan);?>" required readonly>
 											</div>

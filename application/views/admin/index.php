@@ -4,24 +4,6 @@
 					<!-- Page Heading -->
 					<div class="d-sm-flex align-items-center justify-content-between mb-4">
 						<h1 class="h3 mb-0 text-gray-800"><?= $title; ?></h1>
-						<div class="tambahan align-items-center justify-content-between">
-                    		<!--<a href="<?= base_url('ormawa/delete_all_keluhan/') ?>" onclick="return confirm('Anda yakin hapus semua keluhan?')" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm"><i class="fa fa-trash"></i> &nbsp; Hapus semua keluhan</a>-->
-                    		<!--<a href="<?= site_url().'assets/default_file/User Guide SIMARWAH - Admin.pdf' ?>" target="_blank" class="d-none d-sm-inline-block btn btn-sm btn-info shadow-sm"><i class="fa fas fa-book"></i> &nbsp; User Guide Admin</a>-->
-                    		<!--<a href="<?= site_url().'assets/default_file/User Guide SIMARWAH - Mahasiswa.pdf' ?>" target="_blank" class="d-none d-sm-inline-block btn btn-sm btn-info shadow-sm"><i class="fa fas fa-book"></i> &nbsp; User Guide Mahasiswa</a>-->
-                    		<div class="my-2"></div>
-                            <a href="<?= site_url().'assets/default_file/User Guide SIMARWAH - Admin.pdf' ?>" class="btn btn-info btn-icon-split" target="_blank">
-                                <span class="icon text-white-50">
-                                    <i class="fa fas fa-book"></i> 
-                                </span>
-                                <span class="text">User Guide Admin</span>
-                            </a>
-                            <a href="<?= site_url().'assets/default_file/User Guide SIMARWAH - Mahasiswa.pdf' ?>" class="btn btn-info btn-icon-split" target="_blank">
-                                <span class="icon text-white-50">
-                                    <i class="fa fas fa-book"></i> 
-                                </span>
-                                <span class="text">User Guide Mahasiswa</span>
-                            </a>
-                		</div>
 					</div>
           <div class="row">
 						<div class="col-xl-4 col-md-6 col-lg-5">

@@ -133,7 +133,7 @@
     				</button>
     			</div>
     			<div class="modal-body">
-    				<form method="post" action="<?php echo base_url().'c_admin/reset_akun_universitas'?>"
+    				<form method="post" action="<?php echo base_url().'c_admin/reset_akun_fakultas'?>"
     					enctype="multipart/form-data">
               <h7>Anda yakin akan mereset akun <?= $kd_jrsn; ?>?</h7>
     			<input type="hidden" name="kd_jrsn" id="kd_jrsn" value="<?= $kd_jrsn ?>" >

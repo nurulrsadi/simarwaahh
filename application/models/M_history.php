@@ -161,7 +161,7 @@ class M_history extends CI_Model{
   }
   function get_laporan_univ($kd_jrsn)
   {
-    $statususer=array('5','7','9','10','11');
+    $statususer=array('5','7','9','10');
     $this->db->select('*');
     $this->db->from('tb_pengajuan');
     $this->db->join('tb_status', 'tb_status.id_status=tb_pengajuan.statususer', 'left');
@@ -173,7 +173,7 @@ class M_history extends CI_Model{
   }
   function get_laporan_fklts($kd_jrsn)
   {
-    $statususer=array('5','7','9','10','11');
+    $statususer=array('5','7','9','10');
     $this->db->select('*');
     $this->db->from('tb_pengajuan');
     $this->db->join('fakultas', 'fakultas.kode_fakultas=tb_pengajuan.kd_fakultas','left');
@@ -186,7 +186,7 @@ class M_history extends CI_Model{
   }
   function get_laporan_ukmukk($kd_ukmkk)
   {
-    $statususer=array('5','7','9','10','11');
+    $statususer=array('5','7','9','10');
     $this->db->select('*');
     $this->db->from('tb_pengajuan_ukmukk');
     $this->db->join('tb_status', 'tb_status.id_status=tb_pengajuan_ukmukk.statususer');
@@ -195,5 +195,4 @@ class M_history extends CI_Model{
     $this->db->order_by('insertdata', 'DESC');
     return $this->db->get();
   }
-  
 }

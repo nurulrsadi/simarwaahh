@@ -27,6 +27,7 @@
 							<th>Tanggal</th>
 							<th>Nama ormawa</th>
 							<th>Keluhan</th>
+							<th>Aksi</th>
 							<!--<th>Aksi</th>-->
 						</tr>
 					</thead>
@@ -43,12 +44,12 @@
 							<td><?= date_indo($tanggal); ?></td>
 							<td><?= $kd_ormawa; ?></td>
 							<td><?= $isikeluhan; ?></td>
-							<!--<td class="text-center">-->
-							<!--	<center>-->
-							<!--	    <button class="btn btn-danger" data-toggle="modal" data-target="#modal_delete<?php echo $id_keluhan;?>"><i class="fa fa-trash"></i></button>-->
+							<td class="text-center">
+								<center>
+								    <button class="btn btn-danger" data-toggle="modal" data-target="#modal_delete<?php echo $id_keluhan;?>"><i class="fa fa-trash"></i></button>
 								    <!--<a class="btn btn-danger" href "<?= base_url('ormawa/deletekeluhan/'.$id_keluhan)?>" onclick="return confirm('Anda yakin hapus keluhan '+ $kd_ormawa+ ' ?')"><i class="fa fa-trash"></i></a>-->
-							<!--	</center>-->
-							<!--</td>-->
+								</center>
+							</td>
 						</tr>
 		            <?php endforeach;?>
 					</tbody>

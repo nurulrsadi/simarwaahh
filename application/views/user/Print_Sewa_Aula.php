@@ -29,11 +29,6 @@
         {
           padding: 0px;
         }
-       td.break {
-        word-wrap: break-word;
-        width: 300px;
-        padding: 3;
-    }
     </style>
       <?php foreach($detail_sewa->result_array() as $i):
         $penyewa=$i['penyewa'];
@@ -70,15 +65,18 @@
         <td><font size="4" style=" text-align:center; font-weight: bold;">Surat Izin Peminjaman Aula SC oleh <?= $penyewa;?></font></td>
         </tr>
         </table>
-        <table class="no-surat" align="center" border="1">
+        <table class="no-surat" align="center">
           <tr>
-            <td  width="500" height="40" colspan="2" ></td>
+            <td  width="500" height="40" colspan="2"></td>
           </tr>
           <tr>
-            <td colspan="2" class="break">Berdasarkan surat <?= $penyewa;?> dengan nomor <?= $no_surat; ?> tentang Permohonan Izin Sewa Aula Student Center dengan detail Acara sebagai berikut :</td>
+            <td colspan="2" style="padding-left:65;">Berdasarkan surat <?= $penyewa;?> dengan nomor <?= $no_surat; ?> </td>
+          </tr>
+          <tr>
+            <td colspan="2">tentang Permohonan Izin Sewa Aula Student Center dengan detail Acara sebagai berikut :</td>
           </tr>
         </table>
-        <table align="center" style="padding-left:65;" >
+        <table align="center">
           <tr> 
             <td style="padding-left:65;">Nama acara</td>
             <td width="470">: <?= $nama_acara;?></td>

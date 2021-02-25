@@ -1,22 +1,12 @@
 </header>
 <section id="awal">
-<div class="row gtr-200">
-			<div class="col-2 col-12-medium">
-			</div>
-			<div class="col-2 col-12-medium">
-			</div>
-			<div class="col-2 col-12-medium">
-			</div>
-			<div class="col-1 col-12-medium">
-			</div>
-			<div class="col-2 col-12-medium">
-			<a href="<?= site_url().'assets/default_file/User Guide SIMARWAH - Mahasiswa.pdf' ?>" target="_blank" class="button primary" style="background-color:#007bff;" > User Guide SIMARWAH - Mahasiswa</a>
-			</div>
 	<article>
-		<div class="content">
+		<div class="main">
 			<header>
 				<h2>Panduan Awal Pengguna Baru SIMARWAH</h2>
 			</header>
+			<!-- <h3 id="content">Apa itu SIMWARAH ?</h3>
+                <p>Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus odio magna tempus adipiscing a non. In mi primis arcu ut non accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing lorem ipsum dolor sit amet nullam veroeros adipiscing.</p>  -->
 		</div>
 	</article>
 	<div class="features">
@@ -43,9 +33,10 @@
 	</header>
 
 	<span class="image main"><img src="<?php echo base_url('assets/img/tutorial/2.png')?>" alt="" /></span>
-	<h4><b>Ingat !</b></h4>
+
+	<h4>Ingat !</h4>
 	<ol>
-	    <li>Silahkan pahami user guide melalui atau anda dapat melihat video panduan melalui "link video"</li>
+	    <li>Silahkan pahami user guide melalui "link pdf user guide" atau anda dapat melihat video panduan melalui "link video"</li>
 		<li>Organisasi Mahasiswa haruslah telah melakukan update profile setiap pergantian kepengurusan organisasinya.</li>
 		<li>Pencairan Dana hanya dapat dilakukan sebanyak tiga kali.</li>
 		<li>Setiap dokumen yang dikirim haruslah dalam bentuk pdf, kecuali rincian anggaran biaya (dalam bentuk exel). Dengan ukuran maximal 2MB.</li>
@@ -58,9 +49,10 @@
 	</header>
 
 	<span class="image main"><img src="<?php echo base_url('assets/img/tutorial/3.png')?>" alt="" /></span>
-	<h4><b>Ingat !</b></h4>
+
+	<h4>Ingat !</h4>
 	<ol>
-		<li>Silahkan pahami user guide atau anda dapat melihat video panduan melalui "link video"</li>
+		<li>Silahkan pahami user guide melalui "link pdf user guide" atau anda dapat melihat video panduan melalui "link video"</li>
 		<li>Organisasi Mahasiswa haruslah telah melakukan update profile setiap pergantian kepengurusan organisasinya.</li>
 		<li>Jika telah melakukan pendaftaran untuk peminjaman aula Student Center, silahkan meminta tanda tangan kepada pihak aljamiah.</li>
 		<!--<li>Dolor etiam magna etiam.</li>-->

@@ -34,16 +34,16 @@
 						<tr>
 							<?php $j=1; ?>
 							<?php 
-                              foreach($datapengaju->result_array() as $i):
-                                $kd_jrsn=$i['kd_jrsn'];
-                                // $nama_fakultas=$i['nama_fakultas'];
-                                $tahunakademik=$i['tahunakademik'];
-                                $danasisa=$i['danasisa'];
-                                $danaawal=$i['danasisa'];
-                                $nPengajuan=$i['nPengajuan'];
-                                $nama_fakultas=$i['nama_fakultas'];
-                                // $fakultas=$i['parent_fakultas'];
-                                ?>
+                  foreach($datapengaju->result_array() as $i):
+                    $kd_jrsn=$i['kd_jrsn'];
+                    // $nama_fakultas=$i['nama_fakultas'];
+                    $tahunakademik=$i['tahunakademik'];
+                    $danasisa=$i['danasisa'];
+                    $danaawal=$i['danasisa'];
+                    $nPengajuan=$i['nPengajuan'];
+                    $nama_fakultas=$i['nama_fakultas'];
+                    // $fakultas=$i['parent_fakultas'];
+                    ?>
 							<td><?= $j++; ?></td>
 							<td><?= $nama_fakultas; ?></td>
 							<td><?= $kd_jrsn; ?></td>

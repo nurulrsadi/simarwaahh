@@ -145,7 +145,6 @@
     					enctype="multipart/form-data">
               <h7>Anda yakin akan mereset akun <?= $kd_ukmukk; ?>?</h7>
     					<input type="hidden" name="kd_ukmukk" id="kd_ukmukk" value="<?= $kd_ukmukk ?>" >
-							<input type="hidden" name="id_dana" id="id_dana" value="<?= $id_dana ?>" >
     			</div>
     			<div class="modal-footer">
     				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

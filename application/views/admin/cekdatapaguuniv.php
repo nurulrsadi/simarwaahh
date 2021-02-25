@@ -120,7 +120,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					<div class="form-group row">
 						<label for="danaminus" class="col-sm-2 col-form-label">Dana Pagu Anggaran Yang di Acc </label>
 						<div class="col-sm-10">
-							<input type="number" step="0" name="danaminus" id="danaminus" placeholder="Rp. " required>
+							<input type="number" step="0" name="danaminus" id="danaminus" placeholder="Rp. ">
 							<small class="text-decoration" style="color:red">contoh : 2000000</small>
 						</div>
 					</div>

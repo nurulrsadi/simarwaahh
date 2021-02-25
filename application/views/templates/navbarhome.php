@@ -79,7 +79,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <h2 class="bnr-sub-title">Sistem Informasi Tata Kelola Organisasi Mahasiswa</h2>
                 <p class="bnr-para">SIMARWAH (Sistem Informasi Organisasi Mahasiswa) merupakan sistem informasi pada
                   organisasi mahasiswa yang ada di kampus UIN Sunan Gunung Djati Bandung. Sistem ini mempermudah
-                  mahasiswa dalam keperluan di organisasi, seperti peminjaman Aula Student Center, mengajukan anggaran organisasi, serta informasi program kerja setiap organisasi. </p>
+                  mahasiswa dalam keperluan di organisasi, seperti peminjaman Aula Student Center, pendaftaran UKM/UKK, mengajukan anggaran organisasi, serta informasi program kerja setiap organisasi. </p>
                 <!--  <div class="brn-btn">
                   <a href="#" class="btn btn-download">Download now!</a>
                   <a href="#" class="btn btn-more">Learn More</a>
